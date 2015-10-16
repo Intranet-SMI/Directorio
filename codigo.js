@@ -625,9 +625,6 @@
 	 	document.getElementById("area").innerHTML=htmlarea;
 	 	document.getElementById("anexo").innerHTML=htmlanexo;
 
-
-	 	document.getElementById("siguiente").style.display="block";
-	 	//document.getElementById("anterior").style.display="block";
 	 }
 
 	 function filtrar(){
@@ -656,19 +653,6 @@
 	 	document.getElementById("area").innerHTML=htmlareaFiltro;
 	 	document.getElementById("anexo").innerHTML=htmlanexoFiltro;
 
-	 	if (nombreFiltro.length>lineas) {
-	 		document.getElementById("siguiente").style.display="block";
-	 	}
-	 	else {
-	 		document.getElementById("siguiente").style.display="none";
-	 	}
-
-	 	if (nombreFiltro.length>lineas) {
-	 		document.getElementById("anterior").style.display="block";
-	 	}
-	 	else {
-	 		document.getElementById("anterior").style.display="none";
-	 	}
 
 	 }
 

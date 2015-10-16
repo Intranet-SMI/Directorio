@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+}
+
+#titulo {
+	background-color: #ccc;
+	font-size: 15px;
+	text-align: center;
+}
+
+#panel {
+	border: solid 1px #CCC;
+	box-shadow : 2px 0px 7px 0px rgba(0,0,0,0.47);
+} 
+
+.col-sm-4{
+	width: 33%;
+}
+
+#nombre , #area , #anexo {
+	border: 1px solid #ccc;
+}
+
+#nombre a, #area a, #anexo a{
+	
+	color: #000;
+	font-size: 14px;
+
+}
+
+
