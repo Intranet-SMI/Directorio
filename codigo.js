@@ -46,12 +46,11 @@
 	 }
 
 	 function filtrar(){
-	 	var htmlnombreFiltro="";
-	 	var htmlareaFiltro="";
-	 	var htmlanexoFiltro="";
+	 	//var htmlnombreFiltro="";
+	 	//var htmlareaFiltro="";
+	 	//var htmlanexoFiltro="";
 
-	 	var entrada="";
-	 	entrada=document.getElementById("botonBuscar").html;
+	 	var entrada=document.getElementById("botonBuscar").value;
 
 
 
