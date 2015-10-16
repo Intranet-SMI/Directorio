@@ -22,9 +22,9 @@
 	area[5]="Calidad";
 	anexo[5]="4102";
 
- 	var nombreFiltro=new Array(1);
- 	var areaFiltro=new Array(1);
- 	var anexoFiltro=new Array(1);
+ 	var nombreFiltro=new Array();
+ 	var areaFiltro=new Array();
+ 	var anexoFiltro=new Array();
 
 
 	 function init(){
@@ -46,16 +46,22 @@
 	 }
 
 	 function filtrar(){
-	 	//var htmlnombreFiltro="";
-	 	//var htmlareaFiltro="";
-	 	//var htmlanexoFiltro="";
+	 	var htmlnombreFiltro="";
+	 	var htmlareaFiltro="";
+	 	var htmlanexoFiltro="";
 
 	 	var entrada=document.getElementById("botonBuscar").value;
+	 	for(i=0 ; i<nombre.length ;i++){
+	 		if (nombre[i].toLowerCase().indexOf(entrada.toLowerCase()) != -1 || area[i].toLowerCase().indexOf(entrada.toLowerCase()) != -1 || anexo[i].toLowerCase().indexOf(entrada.toLowerCase()) != -1) {
 
+		 		htmlnombreFiltro+="<a href='#'>"+nombre[i]+"</a></br>";
+		 		htmlareaFiltro+="<a href='#'>"+area[i]+"</a></br>";
+		 		htmlanexoFiltro+="<a href='#'>"+anexo[i]+"</a></br>";
+	 		}
+	 	}	
 
-
-	 	document.getElementById("nombre").innerHTML=entrada;
-	 	document.getElementById("area").innerHTML=entrada;
-	 	document.getElementById("anexo").innerHTML=entrada;
+	 	document.getElementById("nombre").innerHTML=htmlnombreFiltro;
+	 	document.getElementById("area").innerHTML=htmlareaFiltro;
+	 	document.getElementById("anexo").innerHTML=htmlanexoFiltro;
 
 	 }
