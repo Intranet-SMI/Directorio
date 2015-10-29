@@ -6,36 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agenda</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
     <link href="estilo.css" rel="stylesheet">
 
   </head>
   <body>
-    <div id="panel" class="container" >
+    <div id="panel" >
       <div id="titulo">
         <h3>Agenda SMI</h3>
       </div>  
-      <label>Buscar:</label>
+      <label for="buscar">Buscar:</label>
       </br>
-      <input id="botonBuscar" type="text" onkeyup="filtrar()">
+      <input name="buscar" id="botonBuscar" type="text" onkeyup="filtrar()">
       </br>
       </br>
-
-
-      	<div  id="ventana" class="row">
-      		  <div id="nombre" class="col-sm-4">
-  	            
-          	</div>
-            <div id="area" class="col-sm-4">
-      			           	
-          	</div>
-            <div id="anexo" class="col-sm-4">
-  	            
-          	</div>
-       	</div>
-    </div>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      
+      <table  border="1" align="center">
+        <thead>
+          <tr>
+          <td class="cabeceraNombre">Nombre</td>
+          <td class="cabeceraArea">Área</td>
+          <td class="cabeceraAnexo">Anexo</td>
+        </tr>
+        </thead>                
+        <tbody id="contenido">
+      	<tr>
+      		  <td id="nombre" class="cabeceraNombre">
+          	</td>
+            <td id="area" class="cabeceraArea">
+          	</td>
+            <td id="anexo" class="cabeceraAnexo">    
+          	</td>
+       	</tr>
+        </tbody>
+      </table>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
     <script src="codigo.js"></script> 
   </body>
 </html>

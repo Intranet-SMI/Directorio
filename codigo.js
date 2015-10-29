@@ -616,14 +616,19 @@
 	 	var htmlnombre="";
 	 	var htmlarea="";
 	 	var htmlanexo="";
+	 	var html="";
 	 	for(i=0 ; i<nombre.length ;i++){
-	 		htmlnombre+="<a href='#'>"+nombre[i]+"</a></br>";
-	 		htmlarea+="<a href='#'>"+area[i]+"</a></br>";
-	 		htmlanexo+="<a href='#'>"+anexo[i]+"</a></br>";
+	 		html +="<tr><td id='nombre' class='cabeceraNombre'>"+nombre[i]+"</td><td id='area' class='cabeceraArea'>"+area[i]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexo[i]+"</td></tr>";
+	 		//htmlnombre+="<a href='#'>"+nombre[i]+"</a></br>";
+	 		//htmlarea+="<a href='#'>"+area[i]+"</a></br>";
+	 		//htmlanexo+="<a href='#'>"+anexo[i]+"</a></br>";
 	 	}
-	 	document.getElementById("nombre").innerHTML=htmlnombre;
+	 	/*document.getElementById("nombre").innerHTML=htmlnombre;
 	 	document.getElementById("area").innerHTML=htmlarea;
-	 	document.getElementById("anexo").innerHTML=htmlanexo;
+	 	document.getElementById("anexo").innerHTML=htmlanexo;*/
+	 	document.getElementById("contenido").innerHTML=html;
+
+	 	
 
 	 }
 
@@ -631,6 +636,7 @@
 	 	var htmlnombreFiltro="";
 	 	var htmlareaFiltro="";
 	 	var htmlanexoFiltro="";
+	 	var htmlFiltro="";
 
 
 	 	var j=0;
@@ -642,18 +648,19 @@
 			 	areaFiltro[j]=area[i];
 			 	anexoFiltro[j]=anexo[i];
 
-		 		htmlnombreFiltro+="<a href='#'>"+nombreFiltro[j]+"</a></br>";
+			 	htmlFiltro +="<tr><td id='nombre' class='cabeceraNombre'>"+nombreFiltro[j]+"</td><td id='area' class='cabeceraArea'>"+areaFiltro[j]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexoFiltro[j]+"</td></tr>";
+		 		/*htmlnombreFiltro+="<a href='#'>"+nombreFiltro[j]+"</a></br>";
 		 		htmlareaFiltro+="<a href='#'>"+areaFiltro[j]+"</a></br>";
-		 		htmlanexoFiltro+="<a href='#'>"+anexoFiltro[j]+"</a></br>";
+		 		htmlanexoFiltro+="<a href='#'>"+anexoFiltro[j]+"</a></br>";*/
 		 		j++;
 	 		}
 	 	}	
-
+	 	/*
 	 	document.getElementById("nombre").innerHTML=htmlnombreFiltro;
 	 	document.getElementById("area").innerHTML=htmlareaFiltro;
 	 	document.getElementById("anexo").innerHTML=htmlanexoFiltro;
-
-
+		*/
+		document.getElementById("contenido").innerHTML=htmlFiltro;
 	 }
 
 

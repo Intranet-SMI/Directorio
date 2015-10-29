@@ -2,6 +2,10 @@ body{
 	margin: 0;
 }
 
+#contenido {
+	margin-bottom:20px;
+}
+
 #titulo {
 	background-color: #ccc;
 	font-size: 15px;
@@ -11,11 +15,11 @@ body{
 #panel {
 	border: solid 1px #CCC;
 	box-shadow : 2px 0px 7px 0px rgba(0,0,0,0.47);
+	/*width: 90%;*/
+	width: 720px;
+	margin: 0 auto ; 
 } 
 
-.col-sm-4{
-	width: 33%;
-}
 
 #nombre , #area , #anexo {
 	border: 1px solid #ccc;
@@ -28,4 +32,19 @@ body{
 
 }
 
+.cabeceraNombre , .cabeceraArea , .cabeceraAnexo {
+	width: 33%;
+	padding:5px;
+	font-size:15px;	
+}
 
+.cabeceraNombre {
+	text-align: left;
+}
+
+.cabeceraArea  {
+	text-align: left;
+}
+.cabeceraAnexo {
+	text-align: center;
+}
