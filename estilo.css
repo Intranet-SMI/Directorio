@@ -1,5 +1,5 @@
-body{
-	margin: 0;
+table.directorio{
+	width: 500px;
 }
 
 #contenido {
@@ -33,7 +33,7 @@ body{
 }
 
 .cabeceraNombre , .cabeceraArea , .cabeceraAnexo {
-	width: 33%;
+	/*width: 33%;*/
 	padding:5px;
 	font-size:15px;	
 }

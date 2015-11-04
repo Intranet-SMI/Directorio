@@ -3,88 +3,66 @@
  	var area=new Array();
  	var anexo=new Array();
 
-
 	nombre[0]="Juan Alberto Franco";
 	area[0]="GERENCIA GENERAL";
 	anexo[0]="1391";
-
 	nombre[1]="Gabriela Herrera Marin";
 	area[1]="GERENCIA GENERAL";
 	anexo[1]="1355";
-	
 	nombre[2]="Planta";	
 	area[2]="RECEPCIÓN";
 	anexo[2]="2000";
-
 	nombre[3]="Sala Recepción";	
 	area[3]="RECEPCIÓN";
 	anexo[3]="2399";
-
 	nombre[4]="Sven Brodersen";	
 	area[4]="VENTAS";	
 	anexo[4]="1237";
-
 	nombre[5]="Bruno Monasi";
 	area[5]="VENTAS";	
 	anexo[5]="1215";
-
 	nombre[6]="Victor Mendiola";	
 	area[6]="VENTAS";	
 	anexo[6]="1230";
-
 	nombre[7]="Susann Ugaz";	
 	area[7]="VENTAS";	
 	anexo[7]="1354";
-
 	nombre[8]="Pedro Garay";	
 	area[8]="VENTAS";	
 	anexo[8]="1351";
-
 	nombre[9]="Johan Sitter";
 	area[9]="VENTAS";	
 	anexo[9]="1209";
-
 	nombre[10]="Gisella Gonzales";	
 	area[10]="VENTAS";	
 	anexo[10]="1380";
-
 	nombre[11]="Marisol Sánchez";	
 	area[11]="VENTAS";	
 	anexo[11]="1311";
-
 	nombre[12]="Verónica Díaz";	
 	area[12]="VENTAS";	
 	anexo[12]="1370";
-
 	nombre[13]="Ermes Komatsudani";	
 	area[13]="VENTAS";	
 	anexo[13]="1372";
-
 	nombre[14]="Sebastián Lanfranco";	
 	area[14]="VENTAS";	
 	anexo[14]="1206";
-
 	nombre[15]="Erick Balarin";	
 	area[15]="VENTAS";	
 	anexo[15]="1231";
-
 	nombre[16]="Pamela Turner";	
 	area[16]="VENTAS";	
 	anexo[16]="1288";
-
 	nombre[17]="Oscar Yepez";
 	area[17]="VENTAS";
 	anexo[17]="1294";
-
-		
-
 	nombre[18]="Hector Parraga";	
 	area[18]="DISTRIBUCIÓN PET";
 	anexo[18]="2236";
 	nombre[19]="Coordinador de distribución";
 	area[19]="DISTRIBUCIÓN PET";
 	anexo[19]="2215";
-		
 	nombre[20]="Jacobo Escriba";	
 	area[20]="RECICLADO";
 	anexo[20]="1353";
@@ -103,7 +81,6 @@
 	nombre[25]="Eduardo Inga";	
 	area[25]="RECICLADO";
 	anexo[25]="2354";
-		
 	nombre[26]="Juan Arenas";	
 	area[26]="PREFORMAS";
 	anexo[26]="2202";
@@ -137,7 +114,6 @@
 	nombre[36]="Laboratorio Preformas";	
 	area[36]="PREFORMAS";
 	anexo[36]="2329";
-		
 	nombre[37]="Javier Campos";	
 	area[37]="SOPLADO";	
 	anexo[37]="2363";
@@ -168,8 +144,6 @@
 	nombre[46]="Miguel Vargas";	
 	area[46]="SOPLADO";
 	anexo[46]="2368";
-		
-
 	nombre[47]="Facturador Botellas";	
 	area[47]="ALMACÉN RANSA";
 	anexo[47]="2234";
@@ -179,23 +153,18 @@
 	nombre[49]="Facturador Preformas";
 	area[49]="ALMACÉN RANSA";
 	anexo[49]="2237";
-		
-		
 	nombre[50]="Jaime Pilco";	
 	area[50]="LABORATORIO/ CONTROL CALIDAD";
 	anexo[50]="2267";
 	nombre[51]="Laboratorio Soplado";	
 	area[51]="LABORATORIO/ CONTROL CALIDAD";
 	anexo[51]="2235";
-		
-
 	nombre[52]="Portería # 1 MATERIALES";	
 	area[52]="SERVICIOS GENERALES";	
 	anexo[52]="2320";
 	nombre[53]="Portería # 1 REYNEL";	
 	area[53]="SERVICIOS GENERALES";	
 	anexo[53]="2321";
-		
 	nombre[54]="Directorio Planta";	
 	area[54]="DIRECTORIOS";	
 	anexo[54]="2260";
@@ -217,9 +186,6 @@
 	nombre[60]="Sala Clear Pet";	
 	area[60]="DIRECTORIOS";	
 	anexo[60]="2268";
-
-
-
 	nombre[61]="Juan Goicoechea";	
 	area[61]="NEXUS";	
 	anexo[61]="1201";
@@ -229,8 +195,6 @@
 	nombre[63]="Sebastián Gálvez";
 	area[63]="NEXUS";
 	anexo[63]="1359";
-		
-		
 	nombre[64]="Giacomo Sissa";	
 	area[64]="ADMINISTRACIÓN Y FINANZAS";	
 	anexo[64]="1205";
@@ -258,8 +222,6 @@
 	nombre[72]="Jessica Rivera";	
 	area[72]="ADMINISTRACIÓN Y FINANZAS";	
 	anexo[72]="2200";
-		
-
 	nombre[73]="Alex Falla";	
 	area[73]="FINANZAS";
 	anexo[73]="1369";
@@ -272,8 +234,6 @@
 	nombre[76]="Ever Orue";	
 	area[76]="FINANZAS";
 	anexo[76]="1212";
-		
-
 	nombre[77]="Beatriz Mesias";	
 	area[77]="CREDITOS Y COBRANZAS";
 	anexo[77]="1243";
@@ -289,8 +249,6 @@
 	nombre[81]="Carlos Requena";	
 	area[81]="CREDITOS Y COBRANZAS";
 	anexo[81]="1261";
-		
-
 	nombre[82]="Luis Mujica";	
 	area[82]="CONTABILIDAD";
 	anexo[82]="1263";
@@ -318,7 +276,6 @@
 	nombre[90]="Kathia Nicho";	
 	area[90]="CONTABILIDAD";
 	anexo[90]="2315";
-
 	nombre[91]="Gino Herrera";
 	area[91]="TECNOLOGÍA I.";
 	anexo[91]="1283";
@@ -357,16 +314,13 @@
 	anexo[102]="2223";
 	nombre[103]="Christian Segura";
 	area[103]="TECNOLOGÍA I.";
-	anexo[103]="1258";
-	
+	anexo[103]="1258";	
 	nombre[104]="Liz Marin";	
 	area[104]="GESTION Y PROCESOS";	
 	anexo[104]="2280";
 	nombre[105]="Julia Flores";	
 	area[105]="GESTION Y PROCESOS";	
 	anexo[105]="2252";
-		
-
 	nombre[106]="Jorge Chávez";
 	area[106]="LOGÍSTICA";
 	anexo[106]="2366";
@@ -400,7 +354,6 @@
 	nombre[116]="Miladi Romero";	
 	area[116]="LOGÍSTICA";
 	anexo[116]="2250";	
-
 	nombre[117]="Víctor Vásquez Chavez";	
 	area[117]="ADM. DE FÁBRICA";
 	anexo[117]="2211";
@@ -413,7 +366,6 @@
 	nombre[120]="Supervisores de PET";	
 	area[120]="ADM. DE FÁBRICA";
 	anexo[120]="2332";
-
 	nombre[121]="Maria Esther Mendoza";
 	area[121]="RRHH Y CALIDAD";
 	anexo[121]="2360";
@@ -447,7 +399,6 @@
 	nombre[131]="Fiorella Colareta";	
 	area[131]="RRHH Y CALIDAD";
 	anexo[131]="2392";
-		
 	nombre[132]="Alicorp";	
 	area[132]="SUCURSALES";
 	anexo[132]="651 1468";
@@ -457,7 +408,6 @@
 	nombre[134]="Don Jorge";	
 	area[134]="SUCURSALES";
 	anexo[134]="anexo 8102 336 6854";
-
 	nombre[135]="Planta Motupe";	
 	area[135]="SMI MOTUPE";	
 	anexo[135]="5418";
@@ -470,7 +420,6 @@
 	nombre[138]="Domicilio del personal";	
 	area[138]="SMI MOTUPE";	
 	anexo[138]="074 426666";
-	
 	nombre[139]="Armando Aguilar";	
 	area[139]="EL SALVADOR";	
 	anexo[139]="4502";
@@ -498,7 +447,6 @@
 	nombre[147]="Almacen SV";
 	area[147]="EL SALVADOR";
 	anexo[147]="4509";
-
 	nombre[148]="Anexo Bavaria";	
 	area[148]="COLOMBIA";
 	anexo[148]="11650";
@@ -553,8 +501,6 @@
 	nombre[165]="Recepcion Colombia";	
 	area[165]="COLOMBIA";
 	anexo[165]="5020";
-		
-
 	nombre[166]="Juan Carlos Gonzáles"; 
 	area[166]="ECUADOR";
 	anexo[166]="(59)3994 690 598";
@@ -585,19 +531,15 @@
 	nombre[175]="Juan Carlos Gonzales";	
 	area[175]="ECUADOR";
 	anexo[175]="4401";
-	nombre[176]="Directorio Video coneferencia";	
+	nombre[176]="Directorio Ecuador";	
 	area[176]="ECUADOR";
 	anexo[176]="4410";
-
-		
-
 	nombre[177]="Juan Bazán";	
 	area[177]="MANTENIMIENTO";
 	anexo[177]="2333";
 	nombre[178]="Jesus Ramos";	
 	area[178]="MANTENIMIENTO";	
-	anexo[178]="2319";
-		
+	anexo[178]="2319";	
 	nombre[179]="COMEDOR";
 	area[179]="COMEDOR";	
 	anexo[179]="2372";
@@ -606,12 +548,9 @@
  	var areaFiltro=new Array();
  	var anexoFiltro=new Array();
 
-
-
 	 function init(){
 	 	mostrarAgenda();
 	 }	
-
 	 function mostrarAgenda(){
 	 	var htmlnombre="";
 	 	var htmlarea="";
@@ -619,48 +558,35 @@
 	 	var html="";
 	 	for(i=0 ; i<nombre.length ;i++){
 	 		html +="<tr><td id='nombre' class='cabeceraNombre'>"+nombre[i]+"</td><td id='area' class='cabeceraArea'>"+area[i]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexo[i]+"</td></tr>";
-	 		//htmlnombre+="<a href='#'>"+nombre[i]+"</a></br>";
-	 		//htmlarea+="<a href='#'>"+area[i]+"</a></br>";
-	 		//htmlanexo+="<a href='#'>"+anexo[i]+"</a></br>";
 	 	}
-	 	/*document.getElementById("nombre").innerHTML=htmlnombre;
-	 	document.getElementById("area").innerHTML=htmlarea;
-	 	document.getElementById("anexo").innerHTML=htmlanexo;*/
 	 	document.getElementById("contenido").innerHTML=html;
-
-	 	
-
 	 }
-
 	 function filtrar(){
 	 	var htmlnombreFiltro="";
 	 	var htmlareaFiltro="";
 	 	var htmlanexoFiltro="";
 	 	var htmlFiltro="";
-
-
 	 	var j=0;
 	 	var entrada=document.getElementById("botonBuscar").value;
 	 	for(i=0 ; i<nombre.length ;i++){
 	 		if (nombre[i].toLowerCase().indexOf(entrada.toLowerCase()) != -1 || area[i].toLowerCase().indexOf(entrada.toLowerCase()) != -1 || anexo[i].toLowerCase().indexOf(entrada.toLowerCase()) != -1) {
-
 	 			nombreFiltro[j]=nombre[i];
 			 	areaFiltro[j]=area[i];
 			 	anexoFiltro[j]=anexo[i];
-
 			 	htmlFiltro +="<tr><td id='nombre' class='cabeceraNombre'>"+nombreFiltro[j]+"</td><td id='area' class='cabeceraArea'>"+areaFiltro[j]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexoFiltro[j]+"</td></tr>";
-		 		/*htmlnombreFiltro+="<a href='#'>"+nombreFiltro[j]+"</a></br>";
-		 		htmlareaFiltro+="<a href='#'>"+areaFiltro[j]+"</a></br>";
-		 		htmlanexoFiltro+="<a href='#'>"+anexoFiltro[j]+"</a></br>";*/
 		 		j++;
 	 		}
 	 	}	
-	 	/*
-	 	document.getElementById("nombre").innerHTML=htmlnombreFiltro;
-	 	document.getElementById("area").innerHTML=htmlareaFiltro;
-	 	document.getElementById("anexo").innerHTML=htmlanexoFiltro;
-		*/
-		document.getElementById("contenido").innerHTML=htmlFiltro;
+
+	 	if (htmlFiltro=="") {
+	 		document.getElementById("contenido").innerHTML= "<tr><td colspan='3'>No se encontraron resultados</td></tr>";
+	 	}else {
+	 		document.getElementById("contenido").innerHTML=htmlFiltro;
+	 	};
 	 }
 
+	/* function ordenar(){
+	 	if()
+	 	alert("hizo click");
+	 }*/
 
