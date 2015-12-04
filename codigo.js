@@ -547,25 +547,37 @@
  	var nombreFiltro=new Array();
  	var areaFiltro=new Array();
  	var anexoFiltro=new Array();
+ 	var htmlFiltro;
 
 	 function init(){
 	 	mostrarAgenda();
 	 }	
 	 function mostrarAgenda(){
-	 	var htmlnombre="";
-	 	var htmlarea="";
-	 	var htmlanexo="";
-	 	var html="";
-	 	for(i=0 ; i<nombre.length ;i++){
-	 		html +="<tr><td id='nombre' class='cabeceraNombre'>"+nombre[i]+"</td><td id='area' class='cabeceraArea'>"+area[i]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexo[i]+"</td></tr>";
+	 	htmlFiltro="";
+	 	copiarArray(nombre,nombreFiltro);
+	 	copiarArray(area,areaFiltro);
+	 	copiarArray(anexo,anexoFiltro);
+
+	 	for(i=0 ; i<nombreFiltro.length ;i++){
+	 		htmlFiltro +="<tr><td id='nombre' class='cabeceraNombre'>"+nombreFiltro[i]+"</td><td id='area' class='cabeceraArea'>"+areaFiltro[i]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexoFiltro[i]+"</td></tr>";
 	 	}
-	 	document.getElementById("contenido").innerHTML=html;
+	 	document.getElementById("contenido").innerHTML=htmlFiltro;
 	 }
+
 	 function filtrar(){
-	 	var htmlnombreFiltro="";
-	 	var htmlareaFiltro="";
-	 	var htmlanexoFiltro="";
-	 	var htmlFiltro="";
+
+	 	htmlFiltro="";
+	 	var temporalNombreFiltro=new Array();
+	 	var temporalAreaFiltro=new Array();
+	 	var temporalAnexoFiltro=new Array();
+	 	copiarArray(nombreFiltro,temporalNombreFiltro);
+	 	copiarArray(areaFiltro,temporalAreaFiltro);
+	 	copiarArray(anexoFiltro,temporalAnexoFiltro);
+
+	 	nombreFiltro.length=0;
+	 	areaFiltro.length=0;
+	 	anexoFiltro.length=0;
+
 	 	var j=0;
 	 	var entrada=document.getElementById("botonBuscar").value;
 	 	for(i=0 ; i<nombre.length ;i++){
@@ -582,11 +594,103 @@
 	 		document.getElementById("contenido").innerHTML= "<tr><td colspan='3'>No se encontraron resultados</td></tr>";
 	 	}else {
 	 		document.getElementById("contenido").innerHTML=htmlFiltro;
-	 	};
+	 	}
+
 	 }
 
-	/* function ordenar(){
-	 	if()
-	 	alert("hizo click");
-	 }*/
+	function ordenar(nombreClase){
+
+	 	htmlFiltro="";
+	 	var posicionFinal=7;
+	 	var columnaFiltrada =nombreClase.substring(8,nombreClase.length).toLowerCase();	 	
+
+	 	if(columnaFiltrada="nombre"){
+	 		var temporalnombre=new Array();
+	 		copiarArray(nombreFiltro,temporalnombre);
+
+	 		var indiceOrden=new Array();
+	 		nombreFiltro=nombreFiltro.sort();
+	 		var indiceDeorden=0;
+	 		for(i=0; i<nombreFiltro.length;i++){
+	 			
+	 			for (var j = 0; j <temporalnombre.length; j++) {
+	 				if(nombreFiltro[i]==temporalnombre[j]){
+	 					indiceOrden[indiceDeorden]=j;
+	 					indiceDeorden++;
+	 					j=temporalnombre.length;
+	 				}
+	 			}
+	 		}
+	 		var temporalarea=new Array();
+	 		copiarArray(areaFiltro,temporalarea);
+	 		//temporalarea=areaFiltro;
+	 		var temporalanexo=new Array();
+	 		copiarArray(anexoFiltro,temporalanexo);
+	 		//temporalanexo=anexoFiltro;	
+	 		for (i = 0 ; i<indiceOrden.length;i++) {
+	 				areaFiltro[i]=temporalarea[indiceOrden[i]];
+	 				anexoFiltro[i]=temporalanexo[indiceOrden[i]];
+	 		}
+
+	 		for(i=0 ; i<nombreFiltro.length ;i++){
+			 	htmlFiltro +="<tr><td id='nombre' class='cabeceraNombre'>"+nombreFiltro[i]+"</td><td id='area' class='cabeceraArea'>"+areaFiltro[i]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexoFiltro[i]+"</td></tr>";
+	 		}
+	 		if (htmlFiltro=="") {
+	 		document.getElementById("contenido").innerHTML= "<tr><td colspan='3'>No se encontraron resultados</td></tr>";
+	 		}else {
+	 		document.getElementById("contenido").innerHTML=htmlFiltro;
+	 		};
+	 	}
+
+	 	if(columnaFiltrada="area"){
+	 		/*var temporalarea=new Array();
+	 		copiarArray(areaFiltro,temporalarea);
+
+	 		var indiceOrden=new Array();
+	 		areaFiltro=areaFiltro.sort();
+	 		var indiceDeorden=0;
+	 		for(i=0; i<areaFiltro.length;i++){
+	 			
+	 			for (var j = 0; j <temporalarea.length; j++) {
+	 				if(areaFiltro[i]==temporalarea[j]){
+	 					indiceOrden[indiceDeorden]=j;
+	 					indiceDeorden++;
+	 					j=temporalarea.length;
+	 				}
+	 			}
+	 		}
+	 		var temporalnombre=new Array();
+	 		copiarArray(nombreFiltro,temporalnombre);
+
+	 		var temporalanexo=new Array();
+	 		copiarArray(anexoFiltro,temporalanexo);
+	
+	 		for (i = 0 ; i<indiceOrden.length;i++) {
+	 				nombreFiltro[i]=temporalnombre[indiceOrden[i]];
+	 				anexoFiltro[i]=temporalanexo[indiceOrden[i]];
+	 		}
+
+	 		for(i=0 ; i<areaFiltro.length ;i++){
+			 	htmlFiltro +="<tr><td id='nombre' class='cabeceraNombre'>"+nombreFiltro[i]+"</td><td id='area' class='cabeceraArea'>"+areaFiltro[i]+"</td><td id='anexo' class='cabeceraAnexo'>"+anexoFiltro[i]+"</td></tr>";
+	 		}
+	 		if (htmlFiltro=="") {
+	 		document.getElementById("contenido").innerHTML= "<tr><td colspan='3'>No se encontraron resultados</td></tr>";
+	 		}else {
+	 		document.getElementById("contenido").innerHTML=htmlFiltro;
+	 		};*/
+
+	 	}
+
+	 	if(columnaFiltrada="anexo"){
+
+	 	}
+
+	 }
+
+	 function copiarArray(vectorClonado , VectorCopia){
+	 	for (var i =0 ; i < vectorClonado.length; i++) {
+	 		VectorCopia[i] = vectorClonado[i];
+	 	}
+
+	 }
 
